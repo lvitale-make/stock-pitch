@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lucas Vitale | JPMorgan Chase (JPM) Stock Pitch</title>
+  <style>
+    :root {
+      --bg: #f6f7f9;
+      --card: #ffffff;
+      --text: #18202b;
+      --muted: #5a6473;
+      --accent: #0b5d3b;
+      --accent-soft: #e2f0e9;
+      --border: #e1e5eb;
+      --fill: #a14a00;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #0f1318;
+        --card: #171c23;
+        --text: #e8ecf1;
+        --muted: #9aa4b2;
+        --accent: #4cc38a;
+        --accent-soft: #15301f;
+        --border: #272e37;
+        --fill: #f0a35e;
+      }
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.65;
+    }
+    .wrap { max-width: 960px; margin: 0 auto; padding: 0 24px; }
+    nav { border-bottom: 1px solid var(--border); }
+    nav .wrap { display: flex; flex-wrap: wrap; gap: 20px; padding-top: 16px; padding-bottom: 16px; }
+    nav a { color: var(--muted); text-decoration: none; font-size: 0.95rem; }
+    nav a:hover { color: var(--accent); }
+    a:focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; border-radius: 4px; }
+    .hero { padding: 64px 0 48px; border-bottom: 1px solid var(--border); }
+    .eyebrow { text-transform: uppercase; letter-spacing: 0.12em; font-size: 0.8rem; color: var(--muted); margin-bottom: 12px; }
+    h1 { font-size: clamp(2rem, 5vw, 3rem); line-height: 1.15; margin-bottom: 16px; }
+    .rating {
+      display: inline-block; background: var(--accent); color: #fff;
+      padding: 4px 16px; border-radius: 999px; font-weight: 700; letter-spacing: 0.05em; margin-bottom: 20px;
+    }
+    @media (prefers-color-scheme: dark) { .rating { color: #0f1318; } }
+    .lede { font-size: 1.2rem; max-width: 680px; margin-bottom: 16px; }
+    .byline { color: var(--muted); font-size: 0.95rem; }
+    section { padding: 48px 0; border-bottom: 1px solid var(--border); }
+    h2 { font-size: 1.5rem; margin-bottom: 18px; }
+    h3 { font-size: 1.1rem; margin-bottom: 8px; }
+    p + p { margin-top: 12px; }
+    .grid { display: grid; gap: 16px; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); }
+    .card {
+      background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 22px;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+    .card:hover { transform: translateY(-3px); box-shadow: 0 8px 24px rgba(0,0,0,0.08); }
+    @media (prefers-reduced-motion: reduce) { .card, .card:hover { transition: none; transform: none; } }
+    .num {
+      display: inline-flex; align-items: center; justify-content: center;
+      width: 32px; height: 32px; border-radius: 50%;
+      background: var(--accent-soft); color: var(--accent); font-weight: 700; margin-bottom: 12px;
+    }
+    ul.risks { list-style: none; display: grid; gap: 12px; }
+    ul.risks li { background: var(--card); border: 1px solid var(--border); border-left: 4px solid var(--fill); border-radius: 8px; padding: 14px 18px; }
+    table { width: 100%; border-collapse: collapse; background: var(--card); border: 1px solid var(--border); border-radius: 12px; overflow: hidden; }
+    th, td { text-align: left; padding: 12px 18px; border-bottom: 1px solid var(--border); }
+    tr:last-child th, tr:last-child td { border-bottom: none; }
+    th { font-weight: 600; width: 50%; }
+    .fill { color: var(--fill); font-weight: 600; }
+    .note { color: var(--muted); font-size: 0.9rem; margin-top: 12px; }
+    .contact p { margin-top: 6px; }
+    footer { padding: 32px 0 56px; color: var(--muted); font-size: 0.9rem; }
+  </style>
+</head>
+<body>
+
+  <nav aria-label="Page sections">
+    <div class="wrap">
+      <a href="#summary">Summary</a>
+      <a href="#company">Company</a>
+      <a href="#thesis">Thesis</a>
+      <a href="#risks">Risks</a>
+      <a href="#valuation">Valuation</a>
+      <a href="#about">About Me</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <div class="wrap">
+      <p class="eyebrow">Stock Pitch &middot; November 2026</p>
+      <h1>JPMorgan Chase &amp; Co. (NYSE: JPM)</h1>
+      <span class="rating">BUY</span>
+      <p class="lede">The largest and most diversified bank in the U.S., with the balance sheet to keep winning in good markets and bad.</p>
+      <p class="byline">By Lucas Vitale &middot; Finance, Tulane University A.B. Freeman School of Business</p>
+    </div>
+  </header>
+
+  <main>
+    <section id="summary">
+      <div class="wrap">
+        <h2>The Pitch in 30 Seconds</h2>
+        <p>I'm recommending a Buy on JPMorgan Chase. JPM makes money across consumer banking, investment banking, trading, and wealth management, so no single business has to carry it. Its capital position lets it grow when competitors pull back, and it keeps out-investing peers in technology.</p>
+        <p>The main risks are a recession driving up loan losses, falling interest rates squeezing lending margins, and a valuation that already sits above other big banks.</p>
+      </div>
+    </section>
+
+    <section id="company">
+      <div class="wrap">
+        <h2>Company Overview</h2>
+        <p>JPMorgan Chase is the largest bank in the United States by total assets. It runs three main businesses:</p>
+        <div class="grid" style="margin-top:20px;">
+          <div class="card">
+            <h3>Consumer &amp; Community Banking</h3>
+            <p>Chase branches, checking and savings accounts, credit cards, mortgages, and auto loans.</p>
+          </div>
+          <div class="card">
+            <h3>Commercial &amp; Investment Bank</h3>
+            <p>M&amp;A advisory, debt and equity underwriting, trading, payments, and lending to businesses of all sizes.</p>
+          </div>
+          <div class="card">
+            <h3>Asset &amp; Wealth Management</h3>
+            <p>Investment management for institutions and individuals, including J.P. Morgan Private Bank.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="thesis">
+      <div class="wrap">
+        <h2>Investment Thesis</h2>
+        <div class="grid">
+          <div class="card">
+            <span class="num">1</span>
+            <h3>Diversified Earnings</h3>
+            <p>When dealmaking slows, consumer banking and payments keep earning. When markets get volatile, trading can pick up the slack. Few banks have that kind of balance.</p>
+          </div>
+          <div class="card">
+            <span class="num">2</span>
+            <h3>Fortress Balance Sheet</h3>
+            <p>Strong capital and liquidity let JPM play offense in downturns. In 2023 it acquired First Republic Bank during the regional banking crisis, adding deposits and wealthy clients.</p>
+          </div>
+          <div class="card">
+            <span class="num">3</span>
+            <h3>Scale in Technology</h3>
+            <p>JPM has one of the largest technology budgets in banking, investing in digital banking, payments, and AI. Its scale spreads those costs across far more customers than smaller rivals can.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="risks">
+      <div class="wrap">
+        <h2>Key Risks</h2>
+        <ul class="risks">
+          <li><strong>Recession:</strong> more borrowers fall behind on loans and credit cards, raising credit losses.</li>
+          <li><strong>Interest rates:</strong> rate cuts can shrink net interest income, the spread between what JPM earns on loans and pays on deposits.</li>
+          <li><strong>Regulation:</strong> stricter capital rules could limit buybacks and dividends.</li>
+          <li><strong>Valuation:</strong> JPM already trades at a premium to peers, so a lot of good news may be priced in.</li>
+          <li><strong>Leadership succession:</strong> an eventual CEO transition creates uncertainty for investors.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="valuation">
+      <div class="wrap">
+        <h2>Valuation Snapshot</h2>
+        <table>
+          <tr><th scope="row">Share price</th><td class="fill">[fill in]</td></tr>
+          <tr><th scope="row">Market cap</th><td class="fill">[fill in]</td></tr>
+          <tr><th scope="row">P/E ratio</th><td class="fill">[fill in]</td></tr>
+          <tr><th scope="row">Price / tangible book value</th><td class="fill">[fill in]</td></tr>
+          <tr><th scope="row">Dividend yield</th><td class="fill">[fill in]</td></tr>
+          <tr><th scope="row">My 12-month price target</th><td class="fill">[fill in]</td></tr>
+        </table>
+        <p class="note">Figures to be filled in from Yahoo Finance or JPM's latest earnings release.</p>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="wrap">
+        <h2>About Me</h2>
+        <p>I'm a sophomore at Tulane's A.B. Freeman School of Business, majoring in Finance with a minor in AI, and I'm pursuing a career in investment banking. I'm a member of Green Bull, Tulane's Investment Banking Development Program, and TAMID, and I've interned at Keefe, Bruyette &amp; Woods (KBW).</p>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <div class="wrap">
+        <h2>Contact</h2>
+        <p><strong>Email:</strong> <span class="fill">[your email here]</span></p>
+        <p><strong>LinkedIn:</strong> <span class="fill">[your LinkedIn URL here]</span></p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <p>Student project for educational purposes only. Not investment advice.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
